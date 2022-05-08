@@ -1,0 +1,10 @@
+The Following program was developed by me, Joel José Ginga, while studying at Universidade Aberta (www.uab.pt)
+for the subject Operating Systems.
+This program allows us to test another c program -  in linux operating system.
+It needs two arguments, the program to test ant the test cases.
+          teste <test_program.c> <test_cases.txt>
+This program then compiles the test_program.c, and executes it - in a child process created using fork -
+using what is in the odd lines of test_cases.txt, and compares
+the result to what is on the next even line, recording the output of each test in the out<test_id>.txt file, where test_id
+is the index of the test, starting at zero. 
+at the end of the program, the failed tests are printed.
